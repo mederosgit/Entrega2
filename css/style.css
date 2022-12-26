@@ -1,0 +1,353 @@
+/* ------------general para los 5html-------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+
+body{
+    width: 95%;
+    background: linear-gradient(45deg,rgb(0, 0, 0),rgb(165, 165, 165));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+/* ------------todo hacia abajo header------------ */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-index{
+    text-align: center;
+    width: 100%;
+    border-radius: 20px;
+    font-size: 50px;
+    background-image: url(/imgWeb/body-3.jpg);
+    color: rgb(0, 0, 0);
+}
+
+
+/* ------------todo hacia abajo footer------------ */
+
+.contenedor-redes{
+    font-family:'Rubik Distressed', cursive;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+.redes{
+    margin-top: 23px;
+    width: 40px;
+    height: 40px;
+}
+
+/* -----------medidas para los 5 html------------- */
+header {
+    width: 100%;
+    grid-area: header;   
+}
+nav {
+    width: 100%;
+    grid-area: nav;
+}
+main {
+    width: 100%;
+    grid-area: main;
+}
+footer {
+    width: 100%;
+    grid-area: footer;
+}
+
+
+.contenedor-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 3fr 1fr;
+    grid-template-areas: 
+      "header"
+      "main"
+      "footer";
+  }
+
+
+
+
+
+
+/* ------------- solo para index ------------- */
+
+.contenedor-foto-index{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.foto-index-1{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+}
+.foto-index-2{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 100px;
+}
+
+.footer-index{
+    margin-top: 10px;
+}
+
+
+/* -----------solo para socios--------------- */
+
+.main-socios{
+    width: 100%;
+}
+
+.contenedor-titulo-socios{
+    text-align: center;
+}
+
+.titulo-socios{
+    margin-top: 50px;
+    font-size: 30px;
+    color: white;
+}
+.subtitulo-socios{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-socios{
+    margin-top: 70px;
+}
+
+.form{
+    margin-left: 15px;
+}
+
+
+/* ---------------solo para catalogo---------------- */
+
+.titulo-catalogo{
+    color: white;
+    text-align: center;
+}
+
+.video-catalogo{
+    margin-bottom: 90px;
+}
+
+.titulo-video-catalogo{
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
+
+.container-catalogo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px;
+
+}
+
+.img-catalogo{
+    width: 300px;
+    height: 300px;
+}
+
+.footer-catalogo{
+    margin-top: 70px;
+}
+
+
+/* -------------solo para productos-------------- */
+
+#main-productos{
+    padding-bottom: 10px ;
+    margin-left: 10px;
+}
+
+.subtitulo-productos{
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.footer-productos{
+    margin-top: 10px;
+}
+
+/* ------------------solo para video------------------- */
+
+.videos{
+    display: flex;
+    display: block;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.videos-1{
+    margin-bottom: 20px;
+}
+
+.videos-2{
+    margin-bottom: 100px;
+}
+
+.titulo-video-1{
+    color: white;
+    text-align: center;
+}
+
+.titulo-video-2{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+.footer-video{
+    padding-top: 100px;
+}
+
+
+/* -----------------------media queries---------------------- */
+
+@media only screen and (min-width: 1200px) {
+
+    .titulo-index{
+        margin-top: 50px;
+        text-align: center;
+        width: 100%;
+        border-radius: 20px;
+        font-size: 90px;
+        background-image: url(/imgWeb/body-3.jpg);
+        color: rgb(0, 0, 0);
+    }
+
+    .redes{
+        margin-top: 23px;
+        width: 50px;
+        height: 50px;
+    }
+
+
+    /* media de index */
+    .foto-index-1{
+        margin-left: 30px;
+        width: 500px;
+        height: 475px;
+        margin-bottom: 30px;
+    }
+    .foto-index-2{
+        margin-left: 30px;
+        width: 500px;
+        height: 475px;
+        margin-bottom: 100px;
+    }
+
+    .footer-index{
+        margin-top: 40px;
+    }
+
+    
+    /* media de catalogo */
+    .img-catalogo{
+        display: none;
+    }
+
+    .titulo-video-catalogo{
+        display: none;
+    }
+
+    .video-catalogo{
+        display: none;
+    }
+
+    .footer-catalogo{
+        margin-top: 230px;
+    }
+
+    
+    
+    /* media de socios */
+    .subtitulo-socios{
+        margin-bottom: 50px;
+    }
+
+    .form{
+        margin-left: 100px;
+    }
+
+    .titulo-socios{
+        font-size: 50px;
+    }
+
+    .subtitulo-socios{
+        font-size: 40px;
+    }
+
+    .footer-socios{
+        margin-bottom: 30px;
+    }
+
+
+    /* media de videos */
+
+    .titulo-video{
+        font-size: 50px;
+    }
+
+    .videos-1{
+        margin-left: 50px;
+        margin-bottom: 100px;
+        height: 650px;
+    }
+
+    .titulo-video-2{
+        display: none;
+    }
+    .videos-2{
+        display: none;
+    }
+
+    .footer-video{
+        margin-top: 30px ;
+    }
+
+    
+    
+    /* media de productos */
+
+    .footer-productos{
+        margin-top: 90px;
+    }
+
+    table{
+        margin-left: 20px;
+    }
+    
+}
+
+
+
+    
+
+
+
+
+
+
+
+
