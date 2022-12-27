@@ -25,11 +25,12 @@ header{
 .titulo-index{
     text-align: center;
     width: 100%;
-    border-radius: 20px black;
-    background-color: rgba(255, 0, 0, 0.176);
-    font-size: 50px;
-    
-    color: rgb(0, 0, 0);
+    padding: 2px;
+    border-radius: black;
+    font-size: 45px;
+    background-color: #7b400079;
+    border-radius: 20px;
+    border: solid 7px rgb(0, 0, 0)
 }
 
 
@@ -96,12 +97,14 @@ footer {
     height: 300px;
     margin-bottom: 30px;
     border-radius: 100px;
+    border: solid 7px white;
 }
 .foto-index-2{
     width: 300px;
     height: 300px;
     margin-bottom: 100px;
     border-radius: 100px;
+    border: solid 7px white;
 }
 
 .footer-index{
@@ -230,7 +233,8 @@ footer {
 @media only screen and (min-width: 1200px) {
 
     .titulo-index{
-        margin-top: 50px;
+        padding: 5px;
+        margin-top: 60px;
         text-align: center;
         width: 100%;
         border-radius: 20px;
@@ -248,11 +252,11 @@ footer {
 
     /* media de index */
     .foto-index-1{
-        margin-left: 30px;
         width: 500px;
         height: 475px;
         margin-bottom: 30px;
     }
+    
     .foto-index-2{
         margin-left: 30px;
         width: 500px;
